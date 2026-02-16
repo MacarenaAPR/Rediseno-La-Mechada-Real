@@ -125,6 +125,7 @@ nav {
 }
 
 #Reserva-Parrafo1 {
+  background-color: rgba(0,0,0,0.45);
   position: absolute;
   right: 0;
   align-items:start;
@@ -255,4 +256,5 @@ footer {
   font-size: 14px;
   color: #aaa;
 }
+
 
