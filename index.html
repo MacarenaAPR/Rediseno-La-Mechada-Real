@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         #map {
         width: 100%;
@@ -41,10 +42,10 @@
     <!-- DIV MENU: RESEÑA MENU + FOTO + BTN NAVEGACION MENU-->
      <div class="menu" id="div_Recursos">
         <div id="Menu-Parrafo">
-            <h5>Menú</h5>
-            <i class="bi bi-fork-knife"></i>
+            <h5>Menú <i class="bi bi-fork-knife"></i></h5>
+            
             <p>En nuestra carta encontrarás preparaciones clásicas, bien hechas y pensadas para compartir. Sabores reconocibles, ingredientes de calidad y el estilo que distingue a La Mechada Real.</p>
-            <button type="button" class="btn btn-dark">Ver Menú</button>
+            <button type="button" class="btn btn-light">Ver Menú</button>
         </div>
 
         
@@ -57,7 +58,7 @@
         <div id="Reserva-Parrafo1">
             <h5>Reservas</h5>
             <p>Un espacio pensado para disfrutar buena comida y un ambiente acogedor. Reserva tu mesa con anticipación y vive la experiencia de La Mechada Real como corresponde.</p>
-            <button type="button" class="btn btn-dark">Reservar</button>
+            <button type="button" class="btn btn-light">Reservar</button>
         </div>
     </div>
 
@@ -79,12 +80,7 @@
     <div class="div_Recursos-Encuentranos">
         <h1>Encuentranos <i class="bi bi-globe"></i></h1>
         <div class="Maps-Recursos">
-            <div id="div_map">
-                <h3>Ubicacion <i class="bi bi-geo-alt"></i></h3>
-                <div id="map"></div>
-                <p>Yerbas Buenas #207</p>
-            </div>
-            <div  id="div_redes">
+             <div  id="div_redes">
                 <div>
                     <h3>Nuestras Redes</h3>
                     <i class="bi bi-facebook"></i>
@@ -97,16 +93,23 @@
                 <div>
                     <h3>Contacto <i class="bi bi-telephone"></i></h3>
                     <p>(+569) 99999999</p>
-                    <i class="bi bi-whatsapp"></i>
+                    
                 </div>                   
             </div>  
+            <div id="div_map">
+                <h3>Ubicacion <i class="bi bi-geo-alt"></i></h3>
+                <div id="map"></div>
+                <p>Yerbas Buenas #207</p>
+            </div>
+           
         </div>
      
         
          
     </div>
-    
-
+    <a href="https://wa.me/569XXXXXXXX" class="wsp-float" target="_blank" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp" id="wsp"></i>
+    </a>
     
 
     <script>
@@ -134,9 +137,6 @@
 
 </body>
 <footer>
-    <div>
-        <p>Desarrollado por @ MPR.ING</p>
-    </div>
-
+    <p>Desarrollado por @ MPR.ING</p>
 </footer>
 </html>
