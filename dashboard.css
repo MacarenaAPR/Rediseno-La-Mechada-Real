@@ -251,7 +251,12 @@ button {
 }
 #img-logo-footer{
   width: 40%;
-  justify-items: center;
+
+}
+#img-logo-footer img{
+  height: 300px;
+
+
 }
 #div_map{
   width: 30%;
@@ -261,22 +266,22 @@ button {
   display: flex;
   flex-direction: column;
   text-align: start;
-  gap: 50px;
+  gap: 20px;
 
   width: 20%;
   justify-items: center;
 }
 #div_redes h3{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 #div_redes i{
-  font-size:3rem;
+  font-size:2rem;
   margin-right: 15px;
   color: #ffffff;
 }
 
 #div_redes p{
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #ffffff;
 }
 #div_map p{
@@ -289,23 +294,31 @@ button {
 }
 @media (max-width: 900px) {
   .Maps-Recursos{
-    flex-direction: column;;
-    gap: 20px;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+
   }
   #div_redes{
+    justify-items: center;
     width: 100%;
     text-align: center;
-    gap: 20px;
-    display: flex;
+    text-align: start;
     flex-direction: row;
-    justify-items: center;
-    align-items: center;
+
   }
 
   #div_map {
     justify-items: center;
-    gap: 20px;
+
     width: 100%;
+  }
+  #img-logo-footer{
+  justify-items: center;
+  width: 100%;
+  }
+  .div_Recursos-Encuentranos{
+  
   }
 
 }
@@ -335,23 +348,23 @@ footer p{
 
   /* NAV */
   nav {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: 0px;
+    height: 30px;
   }
 
   #LOGO {
-    height: 6rem;
+    height: 0rem;
   }
 
   .nav_redes {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   /* HEADER */
   #head {
-    height: 300px;
-    padding: 20px;
-  }
+    height: auto;
+    }
 
   #titulo h1 {
     font-size: 3rem;
