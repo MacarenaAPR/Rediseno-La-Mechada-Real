@@ -1,3 +1,5 @@
+/*CSS GENERAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,10 +14,13 @@ body {
   overflow-x: hidden;
 }
 
-h5{
+h5, h2{
   font-family: "Style Script", cursive;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
 }
 
+
+/*.................WSP ESTATICO.................*/
 .wsp-float {
   position: fixed;
   bottom: 20px;
@@ -37,20 +42,11 @@ h5{
 
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
-@media (max-width: 768px) {
-  .wsp-float {
-    width: 52px;
-    height: 52px;
-    font-size: 24px;
-    bottom: 15px;
-    right: 15px;
-  }
-}
-
 .wsp-float:hover {
   transform: scale(1.1);
 }
-/*NAVEGADOR */
+
+/*........... DIV NAV..........*/
 nav {
   width: 100%;
   background-color: rgba(0,0,0,0.45);
@@ -69,17 +65,16 @@ nav {
   align-items: center;
   text-align: center;
   gap: 15px;
-  font-size: 1rem;
 }
 .nav_redes p{
   justify-items: center;
   align-items: center;
-  font-size: 1rem;
   margin: 0;
 }
-/*HEAD CABECERA*/
+
+/*...................HEAD CABECERA................*/
 #head {
-  height: 600px;
+  height: auto;
   position: relative;
   overflow: hidden;
   flex-direction: column;
@@ -95,63 +90,21 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  
   align-items: center;
   text-align: center;
-  
-   filter: blur(8px);
+  filter: blur(8px);
   transform: scale(1.1); /* evita bordes feos */
   z-index:-1;
 }
 
 #titulo {
-  font-style:italic;
   height: 100%;
   margin-top: 200px;
-   font-weight: 700;
-}
-
-#titulo h1 {
-  text-align: center;
-  font-size: 5.5rem;
   font-family: "Style Script", cursive;
-
-}
-
-#titulo h4 {
-  font-size: 2.5rem;
   text-align: center;
-  font-family: "Style Script", cursive;
-
-}
-/*DIV-RECURSOS-QUIENES-SOMOS SECTION*/
-#div_Recursos-Quienes-Somos {
-    width: 100vw;
-    margin-top: 50px;
-    padding: 20px;
-    display: flex;
-    align-items: stretch;
-    min-height: 100vh;
-}
-#QS-Parrafo{
-  width: 40%;
-  color: #fff;
-  padding: 60px 40px;
-}
-.imagen{
-  width: 60%;
-  max-height: 100vh;
-  overflow: hidden;
-}
-.imagen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
 }
 
-
-/*RECURSOS CONFIGURACION GENERAL */
+/*.............RECURSOS CONFIGURACION GENERAL MENU & RESERVA......... */
 #div_Recursos {
     width: 100vw;
     height: 100px;
@@ -180,19 +133,12 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
-#Reserva-Parrafo1,
-#Menu-Parrafo,
-#QS-Parrafo, h5 {
-  font-size: 3.5rem;
-  margin-bottom: 10px;
-  text-align: start;
-  
-  
+h1{
+  font-family:"Style Script", cursive;
 }
 #Menu-Parrafo,
 #Reserva-Parrafo1,
 p {
-  font-size: 1.5rem;
   line-height: 1.8;
   color: #e0e0e0;
   max-width: 500px;
@@ -204,10 +150,21 @@ p {
 button {
   margin-top: 30px;
   padding: 10px 26px;
-  font-size: 1.2rem;
   border-radius: 8px;
   width: 100%;
-
+}
+button{
+  background: #ffffff;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  color: #262626;
+  border: #ffffff;
+  height: auto;
+  padding: 5px;
+}
+button:hover{
+  background-color: #141414;
+  color:#ffffff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 #Menu-Parrafo  i {
@@ -216,18 +173,43 @@ button {
   opacity: 0.85;
 }
 
-/*RECURSOS POR DIV*/
+/*..........RECURSOS POR DIV............ IMG FONDO*/
 .menu{
   background-image: url(/Recursos/mechada-italiana.webp);  
-  height: 800px;
+  height: auto;
 }
 .reservas{
     background-image: url(/Recursos/TablaTra.webp);
-    height: 700px;
+    height: auto;
 }
 
+/*..............DIV QUIENES SOMOS..................*/
+#div_Recursos-Quienes-Somos {
+    width: 100vw;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+}
+#QS-Parrafo{
+  width: 40%;
+  color: #fff;
+  padding: 60px 40px;
+}
+.imagen{
+  width: 60%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
-/*DIV ENCUENTRANOS + MAPS + FONO + UBICACION + REDES */
+/*..............DIV ENCUENTRANOS..................... */
 .div_Recursos-Encuentranos{
   background-color: #262626;
   color:#ffffff;
@@ -235,27 +217,22 @@ button {
   height: 100%;
   padding: 10px;
   text-align: center;
-  margin-top: 40px;
   display: flex;
   overflow:hidden;
   flex-direction: column;
-
 }
 .Maps-Recursos{
   width: 100%;
   display: flex;
   flex-direction: row;
-  text-align: center;
-  padding: 20px;
-
-  
+  justify-content: start;
 }
 #img-logo-footer{
   width: 30%;
-
 }
 #img-logo-footer img{
-  height: 300px;
+  height: 250px;
+
 
 
 }
@@ -264,88 +241,47 @@ button {
   flex-direction: column;
   text-align: start;
   gap: 20px;
-
   width: 20%;
   justify-items: center;
 }
-#div_redes h3{
-  font-size: 1rem;
-}
+
 #div_redes i{
-  font-size:2rem;
+  font-size:1.5rem;
   margin-right: 15px;
   color: #ffffff;
 }
 
-#div_redes p{
-  font-size: 1rem;
-  color: #ffffff;
-}
 #div_map {
   width: 50%;
-  height: 100%;              /* o un alto fijo */
+  height: 100%;
   display: flex;
   flex-direction: column;
 
 }
 #div_map p{
-  font-size: 1pc;
   text-align: center;
-
+  padding-bottom: 0;
 }
 
 #map {
-  flex: 1;                   /* ESTA es la magia */
+  flex: 1;                   
   width: 100%;
   min-height: 250px;
   border-radius: 15px;
 }
-@media (max-width: 900px) {
-  .Maps-Recursos{
-    flex-direction: column;
-    margin: 0px;
-    padding: 0px;
 
-  }
-  #div_redes{
-    justify-items: center;
-    width: 100%;
-    text-align: center;
-    text-align: start;
-    flex-direction: row;
-
-  }
-
-  #div_map {
-    justify-items: center;
-
-    width: 100%;
-  }
-  #img-logo-footer{
-  justify-items: center;
-  width: 100%;
-  }
-
-
-}
-
-
-
-
+/*.......footer...........*/
 footer {
   background-color: rgba(0,0,0,0.1);
-  align-items: center;
   justify-items: center;
   height: 100%;
   color: #aaa;
 }
-footer p{
-  font-size: 15px;
-}
 
-/* =========================
-   AJUSTES MOBILE (CELULAR)
-   ========================= */
+
+/*            =========================
+               AJUSTES MOBILE (CELULAR)
+              ========================= */
 @media (max-width: 768px) {
 
   body {
@@ -524,7 +460,40 @@ footer p{
   footer {
     font-size: 0.75rem;
   }
+
+  /*wsp */
+  .wsp-float {
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+    bottom: 15px;
+    right: 15px;
+  }
 }
 
+@media (max-width: 900px) {
+  .Maps-Recursos{
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
 
+  }
+  #div_redes{
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+    text-align: start;
+    flex-direction: row;
 
+  }
+
+  #div_map {
+    justify-items: center;
+
+    width: 100%;
+  }
+  #img-logo-footer{
+  justify-items: center;
+  width: 100%;
+  }
+}
