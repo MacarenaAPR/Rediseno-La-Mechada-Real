@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1e7bbf">
-    <title>Rediseño-LaMechadaReal</title>
+    <title>Mechada Real - Sandwichería Valdivia</title>
+    <meta name="description" content="Deliciosa carne mechada y sandwichería en Valdivia. Menú, reservas y ubicación.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -34,7 +35,7 @@
         </nav>
         <div id="titulo">
             <h1>La Mechada Real</h1>
-            <h4>Sandwicheria</h4> 
+            <h3>Sandwicheria</h3> 
         </div>   
     </div>
 
@@ -42,10 +43,10 @@
     <!-- DIV MENU: RESEÑA MENU + FOTO + BTN NAVEGACION MENU-->
      <div class="menu" id="div_Recursos">
         <div id="Menu-Parrafo">
-            <h5>Menú <i class="bi bi-fork-knife"></i></h5>
+            <h2>Menú <i class="bi bi-fork-knife"></i></h2>
             
             <p>En nuestra carta encontrarás preparaciones clásicas, bien hechas y pensadas para compartir. Sabores reconocibles, ingredientes de calidad y el estilo que distingue a La Mechada Real.</p>
-            <button type="button" class="btn btn-light">Ver Menú</button>
+            <button type="button"><strong>Ver menú completo</strong></button>
         </div>
 
         
@@ -56,9 +57,9 @@
     <!--DIV RESERVAS: RESEÑA RESERVA + FOTO + BTN NAVEGACION RESERVA-->
     <div class="reservas"id="div_Recursos">
         <div id="Reserva-Parrafo1">
-            <h5>Reservas</h5>
+            <h2>Reservas</h2>
             <p>Un espacio pensado para disfrutar buena comida y un ambiente acogedor. Reserva tu mesa con anticipación y vive la experiencia de La Mechada Real como corresponde.</p>
-            <button type="button" class="btn btn-light">Reservar</button>
+            <button type="button"><strong>Reserva tú mesa</strong></button>
         </div>
     </div>
 
@@ -67,7 +68,7 @@
     <!--DIV QUIENES SOMOS : RESEÑA DE QUIENES SOMOS + FOTO -->
     <div id="div_Recursos-Quienes-Somos">
         <div id="QS-Parrafo">
-            <h5>Quienes Somos</h5>
+            <h2>Quienes Somos</h2>
             <p>La Mechada Real es una Sandwichería express, ubicada en el centro de Valdivia y a un par de cuadras de la Plaza de la República.Somos especialistas en Carne Mechada de Vacuno, aunque contamos con alternativas en Pollo a la Plancha y Falafel (Vegetariano).</p>   
         </div>
         <div class="imagen"><img src="/Recursos/QuienesSomos.webp" alt="mechada"></div>
@@ -78,21 +79,21 @@
 
     <!--DIV ENCUENTRANOS: UBICACION GOOGLEMAPS + TELEFONOS + FOTO + DIRECCION + HORARIOS -->
     <div class="div_Recursos-Encuentranos">
-        <h1>Encuentranos <i class="bi bi-globe"></i></h1>
+        <h2>Encuentranos <i class="bi bi-globe"></i></h2>
         <div class="Maps-Recursos">
             <div id="img-logo-footer"><img src="/Recursos/LOGO.png" alt=""></div>
             <div  id="div_redes">
                 <div id="div-redes-redes">
-                    <h3>Nuestras Redes</h3>
+                    <h5>Nuestras Redes</h5>
                     <a href="https://www.facebook.com/lamechadareal?locale=es_LA"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/lamechadareal"><i class="bi bi-instagram"></i></a>
                 </div>
                 <div> 
-                    <h3>Horarios </i></h3>
+                    <h5>Horarios </i></h5>
                     <p>08:30 Am - 23:30 Pm</p>
                 </div>
                 <div>
-                    <h3>Contacto </i></h3>
+                    <h5>Contacto </i></h5>
                     <p>(+569) 99999999</p>
                     
                 </div>                   
@@ -118,7 +119,7 @@
         const ubicacion = { lat: -39.81794585590601, lng: -73.2472351408292 }; // Valdivia, 
 
         const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
+        zoom: 15,
         center: ubicacion,
         });
 
