@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1e7bbf">
     <title>Mechada Real - Sandwichería Valdivia</title>
-    <meta name="google-site-verification" content="0zwgweArvYD1qp2153cjcrPe6s0OSCSkde75BrDdn2c" />
     <meta name="description" content="Deliciosa carne mechada y sandwichería en Valdivia. Menú, reservas y ubicación.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -26,8 +25,11 @@
 <body>
     <!--DIV HEAD: FOTO PRINCIPAL + TITULO + nav-->
     <div class="container-flex" id="head" >
-         <nav>
+         <nav class="nav-lateral">
             <a href="#"><img src="/Recursos/LOGO.png" alt="logo" id="LOGO"></a>
+            <a href="">Menú</a>
+            <a href="">Reservas</a>
+            <a href="">Contactanos</a>
             <div class="nav_redes">
                 <P>Siguenos en nuestras redes</P>
                 <a href="https://www.facebook.com/lamechadareal?locale=es_LA"><i class="bi bi-facebook"></i></a>
@@ -110,7 +112,7 @@
         
          
     </div>
-    <a href="https://wa.me/569XXXXXXXX" class="wsp-float" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/56988424939" class="wsp-float" target="_blank" aria-label="WhatsApp">
     <i class="bi bi-whatsapp" id="wsp"></i>
     </a>
     
@@ -137,10 +139,23 @@
     async
     defer>
     </script>
+    <script>
+        window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 300) {
+            nav.classList.add("nav-lateral");
+            nav.style.opacity = "1";
+            nav.style.pointerEvents = "auto";
+        } else {
+            nav.classList.remove("nav-lateral");
+            nav.style.opacity = "1";
+            nav.style.pointerEvents = "auto";
+        }
+        });
+    </script>
 
 </body>
 <footer>
     <p>Desarrollado por @ MPR.ING</p>
 </footer>
 </html>
-
