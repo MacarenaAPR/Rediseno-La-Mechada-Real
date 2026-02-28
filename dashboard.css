@@ -246,11 +246,12 @@ button:hover{
 #div_Recursos-Quienes-Somos {
     width: 100vw;
     gap: 5%;
+    height: auto;
     margin-top: 50px;
     padding: 20px;
     display: flex;
     align-items: stretch;
-    min-height: 100vh;
+    min-height: auto;
 }
 #QS-Parrafo{
   background-color: rgba(0,0,0,0.45);
@@ -267,11 +268,11 @@ button:hover{
 }
 .imagen img {
   width: 100%;
-  height: 100%;
+  height: 64%;
   object-fit: cover;
   display: block;
+  
 }
-
 /*..............DIV ENCUENTRANOS..................... */
 .div_Recursos-Encuentranos{
   background-color: rgba(0,0,0,0.8);
@@ -643,3 +644,4 @@ nav.open .nav_redes {
 
 
 }
+
