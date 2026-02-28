@@ -56,9 +56,21 @@ nav {
   align-items: center;
   padding: 2px 15px;
 }
+#mobile-menu-btn {
+  display: none;
+}
 
 #LOGO {
   height: 4rem;
+}
+.menu-dropdown{
+  width: 50%;
+  margin-left: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
 }
 
 .nav_redes {
@@ -79,12 +91,12 @@ nav {
   transform: scale(1.5);
   color:#b22323;
 }
-nav a{
+.menu-dropdown a{
   color: white;
   text-decoration: none;
 }
 
-nav a:hover{
+.menu-dropdown a:hover{
   transform: scale(1.2);
 }
 
@@ -110,6 +122,12 @@ nav a:hover{
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
+.nav-lateral .menu-dropdown {
+  margin: 0;
+  flex-direction: column;
+  width: auto;
+  justify-content: center;
+}
 .nav-lateral .nav_redes p {
   display: none;
 }
@@ -133,7 +151,7 @@ nav a:hover{
   display: flex;
   align-items: center;
   text-align: center;
-  filter: blur(8px);
+  filter: blur(2px);
   transform: scale(1.1); /* evita bordes feos */
   z-index:-1;
 }
@@ -335,22 +353,95 @@ footer {
 
   body {
     overflow-x: hidden;
+
   }
 
-  /* NAV */
   nav {
-    flex-direction: row;
-    gap: 0px;
-    height: 30px;
-  }
+  overflow:visible;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 9999; /* importante */
+}
 
-  #LOGO {
-    height: 0rem;
-  }
+/* Botón */
+#mobile-menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  width: auto;
+  margin-top: 0;
+  height: auto;
+  font-size: auto;
+  box-shadow: none;
+}
 
-  .nav_redes {
-    font-size: 1rem;
-  }
+/* Ocultar todo menos botón y redes */
+#Menu,
+#Reservas,
+#contactanos,
+#LOGO {
+  display: none;
+}
+
+/* Redes arriba */
+.nav_redes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav_redes p {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ESTADO ABIERTO */
+.menu-dropdown {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.45);
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+}
+
+nav.open .menu-dropdown {
+  display: flex;
+}
+
+nav.open #Menu,
+nav.open #Reservas,
+nav.open #contactanos {
+  display: block;
+  padding: 10px 0;
+}
+nav.open #Menu:hover {
+  transform: scale(1.05);}
+nav.open #Reservas:hover {
+  transform: scale(1.05);
+}
+nav.open #contactanos:hover {
+  transform: scale(1.05);
+}
+
+nav.open .nav_redes {
+  margin-top: 10px;
+}
+
+
+  
 
   /* HEADER */
   #head {
@@ -373,8 +464,9 @@ footer {
   }
 
   #QS-Parrafo {
-    width: 100%;
+    width: 95%;
     padding: 30px 20px;
+    margin-bottom: 10px;
   }
 
   #QS-Parrafo h5 {
@@ -387,8 +479,10 @@ footer {
   }
 
   .imagen {
-    width: 100%;
+    width: 95%;
     max-height: none;
+    margin: 0px; 
+    padding: 0px;
   }
 
   .imagen img {
@@ -403,14 +497,15 @@ footer {
 
   .menu,
   .reservas {
+    width: 100%;
     height: auto;
-    padding: 40px 0;
+    padding:0;
   }
 
   #Menu-Parrafo,
   #Reserva-Parrafo1 {
     position: relative;
-    width: 100%;
+    width: 95%;
     max-width: 100%;
     margin: 0;
     padding: 20px;
