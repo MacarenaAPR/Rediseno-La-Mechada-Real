@@ -25,11 +25,15 @@
 <body>
     <!--DIV HEAD: FOTO PRINCIPAL + TITULO + nav-->
     <div class="container-flex" id="head" >
-         <nav class="nav-lateral">
+         <nav>
+            <button id="mobile-menu-btn">☰</button>
             <a href="#"><img src="/Recursos/LOGO.png" alt="logo" id="LOGO"></a>
-            <a href="">Menú</a>
-            <a href="">Reservas</a>
-            <a href="">Contactanos</a>
+            <div class="menu-dropdown">
+                <a id="Menu"href="">Menú</a>
+                <a id="Reservas"href="">Reservas</a>
+                <a id="contactanos"href="">Contactanos</a> 
+            </div>
+            
             <div class="nav_redes">
                 <P>Siguenos en nuestras redes</P>
                 <a href="https://www.facebook.com/lamechadareal?locale=es_LA"><i class="bi bi-facebook"></i></a>
@@ -140,16 +144,25 @@
     defer>
     </script>
     <script>
+        const btn = document.getElementById("mobile-menu-btn");
+        const nav = document.querySelector("nav");
+
+        btn.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+    </script>
+    <script>
         window.addEventListener("scroll", () => {
         const nav = document.querySelector("nav");
-        if (window.scrollY > 300) {
+
+        if (window.innerWidth > 768) { // SOLO desktop
+            if (window.scrollY > 20) {
             nav.classList.add("nav-lateral");
             nav.style.opacity = "1";
             nav.style.pointerEvents = "auto";
-        } else {
+            } else {
             nav.classList.remove("nav-lateral");
-            nav.style.opacity = "1";
-            nav.style.pointerEvents = "auto";
+            }
         }
         });
     </script>
