@@ -9,21 +9,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="Menu.css">
+    <link rel="stylesheet" href="dashboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
+    <style>
+        #map {
+        width: 100%;
+        height: 400px;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="header-carrusel-titulo">
-        <nav>
+    <!--DIV HEAD: FOTO PRINCIPAL + TITULO + nav-->
+    <div class="container-flex" id="head" >
+         <nav>
             <button id="mobile-menu-btn">☰</button>
-            <a href="index.html"><img src="/Recursos/LOGO.png" alt="logo" id="LOGO"></a>
+            <a href="#"><img src="/Recursos/LOGO.png" alt="logo" id="LOGO"></a>
             <div class="menu-dropdown">
+                <a id="Menu"href="menu.html">Menú</a>
                 <a id="Reservas"href="Reserva.Html">Reservas</a>
                 <a id="contactanos"href="#div_Recursos-Encuentranos">Contactanos</a> 
             </div>
@@ -31,43 +37,112 @@
             <div class="nav_redes">
                 <P>Siguenos en nuestras redes</P>
                 <a href="https://www.facebook.com/lamechadareal?locale=es_LA"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/lamechadareal"><i class="bi bi-instagram"></i></a></div>  
+                <a href="https://www.instagram.com/lamechadareal"><i class="bi bi-instagram"></i></a>
+            </div>       
         </nav>
-    </header>
-    <Main id="menu">
-        
-        <div class="header-carrusel-titulo">    
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  
-                <div class="carousel-indicators" id="carousel-indicators"></div>
+        <div id="titulo">
+            <h1>La Mechada Real</h1>
+            <h3>Sandwicheria</h3> 
+        </div>   
+    </div>
 
-                <div class="carousel-inner" id="carousel-inner"></div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-
-            </div>
-            <h1 id="menu-la-mechada-real">Menú La Mechada Real</h1>
+    <!-- DIV MENU: RESEÑA MENU + FOTO + BTN NAVEGACION MENU-->
+     <div class="menu" id="div_Recursos">
+        <div id="Menu-Parrafo">
+            <h2>Menú <i class="bi bi-fork-knife"></i></h2>
+            
+            <p>En nuestra carta encontrarás preparaciones clásicas, bien hechas y pensadas para compartir. Sabores reconocibles, ingredientes de calidad y el estilo que distingue a La Mechada Real.</p>
+            <button type="button"onclick="window.location.href='menu.html'"><strong>Ver menú completo</strong></button>
         </div>
-        <nav class="navbar navbar-dark bg-dark" id="navbar">
-            <button class="btn-nav">Para Comer</button>
-            <button class="btn-nav">Para Beber</button>
-        </nav>    
-        <!--WSP-->
-        <a href="https://wa.me/56988424939" class="wsp-float" target="_blank" aria-label="WhatsApp">
-        <i class="bi bi-whatsapp" id="wsp"></i>
-        </a> 
-    </Main>
-    
-    <footer>
-        <p>Desarrollado por @ MPR.ING</p>
-    </footer>
 
+        
+    </div>
+
+
+
+    <!--DIV RESERVAS: RESEÑA RESERVA + FOTO + BTN NAVEGACION RESERVA-->
+    <div class="reservas"id="div_Recursos">
+        <div id="Reserva-Parrafo1">
+            <h2>Reservas</h2>
+            <p>Un espacio pensado para disfrutar buena comida y un ambiente acogedor. Reserva tu mesa con anticipación y vive la experiencia de La Mechada Real como corresponde.</p>
+            <button type="button"onclick="window.location.href='Reserva.Html'"><strong>Reserva tú mesa</strong></button>
+        </div>
+    </div>
+
+
+
+    <!--DIV QUIENES SOMOS : RESEÑA DE QUIENES SOMOS + FOTO -->
+    <div id="div_Recursos-Quienes-Somos">
+        <div id="QS-Parrafo">
+            <h2>Quienes Somos</h2>
+            <p>La Mechada Real es una Sandwichería express, ubicada en el centro de Valdivia y a un par de cuadras de la Plaza de la República.Somos especialistas en Carne Mechada de Vacuno, aunque contamos con alternativas en Pollo a la Plancha y Falafel (Vegetariano).</p>   
+        </div>
+        <div class="imagen"><img src="/Recursos/QuienesSomos.webp" alt="mechada"></div>
+        
+    </div>
+
+
+
+    <!--DIV ENCUENTRANOS: UBICACION GOOGLEMAPS + TELEFONOS + FOTO + DIRECCION + HORARIOS -->
+    <div class="div_Recursos-Encuentranos" id="div_Recursos-Encuentranos">
+        <h2>Encuentranos <i class="bi bi-globe"></i></h2>
+        <div class="Maps-Recursos">
+            <div id="img-logo-footer"><img src="/Recursos/LOGO.png" alt=""></div>
+            <div  id="div_redes">
+                <div id="div-redes-redes">
+                    <h5>Nuestras Redes</h5>
+                    <a href="https://www.facebook.com/lamechadareal?locale=es_LA"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/lamechadareal"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div> 
+                    <h5>Horarios </i></h5>
+                    <p>08:30 Am - 23:30 Pm</p>
+                </div>
+                <div>
+                    <h5>Contacto </i></h5>
+                    <p>(+569) 99999999</p>
+                    
+                </div>                   
+            </div>  
+            <div id="div_map">
+                <h3>Ubicacion <i class="bi bi-geo-alt"></i></h3>
+                <div id="map"></div>
+                <p>Yerbas Buenas #207</p>
+            </div>
+           
+        </div>
+     
+        
+         
+    </div>
+    <a href="https://wa.me/56988424939" class="wsp-float" target="_blank" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp" id="wsp"></i>
+    </a>
+    
+
+    <script>
+    function initMap() {
+        const ubicacion = { lat: -39.81794585590601, lng: -73.2472351408292 }; // Valdivia, 
+
+        const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: ubicacion,
+        });
+
+        new google.maps.Marker({
+        position: ubicacion,
+        map: map,
+        title: "Aquí estoy"
+        });
+    }
+    </script>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCZS5Oh4tfEsabYwervGkXyjJSq8H720U&callback=initMap"
+    async
+    defer>
+    </script>
     <script>
         const btn = document.getElementById("mobile-menu-btn");
         const nav = document.querySelector("nav");
@@ -91,192 +166,9 @@
         }
         });
     </script>
-    <script>
-const slug = "la-mechada-real";
-const apiUrl = `http://127.0.0.1:8000/api/menu/${slug}/`;
-
-const menuContainer = document.getElementById("menu");
-const carouselInner = document.getElementById("carousel-inner");
-const carouselIndicators = document.getElementById("carousel-indicators");
-const imagenesCategorias = {
-    "Desayunos": "/Recursos/recurso1.webp",
-    "Mechadas": "/Recursos/recurso2.webp",
-    "Churrasco y Completos": "/Recursos/recurso3.webp",
-    "Para Compartir": "/Recursos/recurso4.webp",
-    "Platos": "/Recursos/recurso5.webp",
-    "Menu Infantil": "/Recursos/recurso6.webp",
-};
-fetch(apiUrl)
-.then(response => response.json())
-.then(data => {
-
-    let slideIndex = 0;
-    let hayPromociones = false;
-    let contadorCategorias = 0;
-
-    data.forEach(categoria => {
-        
-        const esPromocion = categoria.categoria.toLowerCase() === "promociones";
-
-        // ============================
-        // 🔥 PROMOCIONES → CARRUSEL
-        // ============================
-        if (esPromocion && categoria.productos.length > 0) {
-
-            hayPromociones = true;
-
-            categoria.productos.forEach(producto => {
-
-                // Indicador
-                const indicator = document.createElement("button");
-                indicator.type = "button";
-                indicator.setAttribute("data-bs-target", "#carouselExampleDark");
-                indicator.setAttribute("data-bs-slide-to", slideIndex);
-
-                if (slideIndex === 0) {
-                    indicator.classList.add("active");
-                }
-
-                carouselIndicators.appendChild(indicator);
-
-                // Slide
-const slide = document.createElement("div");
-slide.className = slideIndex === 0
-    ? "carousel-item active"
-    : "carousel-item";
-
-// Contenedor personalizado
-const promoContainer = document.createElement("div");
-promoContainer.className = "promo-container";
-
-// FOTO
-const imgDiv = document.createElement("div");
-imgDiv.className = "promo-img";
-
-if (producto.imagen) {
-    const img = document.createElement("img");
-    img.src = "http://127.0.0.1:8000" + producto.imagen;
-    img.alt = producto.nombre;
-    imgDiv.appendChild(img);
-}
-
-// 🔥 Badge llamativo
-const badge = document.createElement("div");
-badge.className = "promo-badge";
-badge.textContent = "PROMOCIÓN";
-
-imgDiv.appendChild(badge);
-
-// DETALLE
-const detailDiv = document.createElement("div");
-detailDiv.className = "promo-detail";
-
-detailDiv.innerHTML = `
-    <div class="promo-header">
-        <h2>${producto.nombre}</h2>
-        <div class="promo-price">$${producto.precio}</div>
-    </div>
-
-    <div class="promo-divider"></div>
-
-    <p class="promo-description">
-        ${producto.descripcion || ""}
-    </p>
-    <p class="promo-condiciones">
-        ${producto.Condiciones || ""}
-    </p>
-
-    
-`;
-promoContainer.appendChild(imgDiv);
-promoContainer.appendChild(detailDiv);
-
-slide.appendChild(promoContainer);
-carouselInner.appendChild(slide);
-
-                slideIndex++;
-            });
-        }
-
-        // ============================
-        // 🍔 RESTO → SECTION POR CATEGORÍA
-        // ============================
-        
-        else if (!esPromocion && categoria.productos.length > 0) {
-
-            const section = document.createElement("section");
-            section.className = "categoria-section";
-
-            // CONTENEDOR FLEX
-            const container = document.createElement("div");
-            container.className = "categoria-flex";
-
-            // 🔁 Alternar izquierda/derecha
-            if (contadorCategorias % 2 !== 0) {
-                container.style.flexDirection = "row-reverse";
-            }
-
-            // ======================
-            // 📸 IMAGEN (solo una)
-            // ======================
-            const imagenDiv = document.createElement("div");
-            imagenDiv.className = "categoria-imagen";
-
-            const img = document.createElement("img");
-
-            if (imagenesCategorias[categoria.categoria]) {
-                img.src = imagenesCategorias[categoria.categoria];
-            } else {
-                img.src = "/Recursos/default.jpg";
-            }
-            img.alt = categoria.categoria;
-            imagenDiv.appendChild(img);
-            // ======================
-            // 📋 LISTA PRODUCTOS
-            // ======================
-            const listaDiv = document.createElement("div");
-            listaDiv.className = "categoria-lista";
-
-            const titulo = document.createElement("h2");
-            titulo.textContent = categoria.categoria;
-            listaDiv.appendChild(titulo);
-
-            categoria.productos.forEach(producto => {
-
-                const item = document.createElement("div");
-                item.className = "producto-item";
-
-                item.innerHTML = `
-                    <div>
-                        <strong>${producto.nombre}</strong>
-                        <p>${producto.descripcion || ""}</p>
-                    </div>
-                    <span>$${producto.precio}</span>
-                `;
-
-                listaDiv.appendChild(item);
-            });
-
-            container.appendChild(imagenDiv);
-            container.appendChild(listaDiv);
-            section.appendChild(container);
-            menuContainer.appendChild(section);
-
-            contadorCategorias++;
-        }
-
-    });
-
-    // Si no hay promociones → ocultar carrusel
-    if (!hayPromociones) {
-        document.getElementById("carouselExampleDark").style.display = "none";
-    }
-
-})
-.catch(error => {
-    console.error("Error cargando menú:", error);
-});
-</script>
+    <footer>
+        <p>Desarrollado por @ MPR.ING</p>
+    </footer>
 </body>
 
 </html>
