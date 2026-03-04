@@ -155,7 +155,7 @@ imgDiv.className = "promo-img";
 
 if (producto.imagen) {
     const img = document.createElement("img");
-    img.src = "http://127.0.0.1:8000" + producto.imagen;
+    img.src = producto.imagen;
     img.alt = producto.nombre;
     imgDiv.appendChild(img);
 }
@@ -282,3 +282,4 @@ carouselInner.appendChild(slide);
 
 
 </html>
+
