@@ -335,11 +335,10 @@ nav.open .nav_redes {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .categoria-flex.row-reverse {
-        flex-direction: column !important;
     .categoria-flex {
         flex-direction: column;
     }
+  
 }
 
 /* CONTENEDOR GENERAL DEL SLIDE */
@@ -416,6 +415,7 @@ footer{
     text-align: center;
     background-color:  rgba(0,0,0,0.15);
 }
+
 
 
 
