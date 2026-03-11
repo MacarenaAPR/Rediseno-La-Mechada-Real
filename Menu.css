@@ -300,30 +300,25 @@ nav.open .nav_redes {
 }
 
 .categoria-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 20px;
-    }
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 
 .categoria-imagen {
-   width: 100%;
-   flex: none;
-      
+    flex: 1;
+   
 }
 
 .categoria-imagen img {
-    display: block;
     width: 100%;
-     height: 260px;
-     object-fit: cover;
-     border-radius: 16px;
+    border-radius: 16px;
+    object-fit: cover;
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 .categoria-lista {
-    width: 100%;
-
+    flex: 1;
 }
 
 .categoria-lista h2 {
@@ -332,9 +327,6 @@ nav.open .nav_redes {
 
 .producto-item {
     display: flex;
-  flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
     justify-content: space-between;
     padding: 10px 0;
     border-bottom: 1px solid #eee;
@@ -421,5 +413,3 @@ footer{
     text-align: center;
     background-color:  rgba(0,0,0,0.15);
 }
-
-
