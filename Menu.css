@@ -303,6 +303,7 @@ nav.open .nav_redes {
     display: flex;
     align-items: center;
     gap: 40px;
+  flex-direction: column;
 }
 
 .categoria-imagen {
@@ -413,3 +414,4 @@ footer{
     text-align: center;
     background-color:  rgba(0,0,0,0.15);
 }
+
