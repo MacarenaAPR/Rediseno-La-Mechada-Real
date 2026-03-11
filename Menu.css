@@ -323,7 +323,7 @@ nav.open .nav_redes {
 
 .categoria-lista {
     width: 100%;
-        flex: none;
+
 }
 
 .categoria-lista h2 {
@@ -421,4 +421,5 @@ footer{
     text-align: center;
     background-color:  rgba(0,0,0,0.15);
 }
+
 
