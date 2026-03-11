@@ -384,6 +384,7 @@ nav.open .nav_redes {
 @media (max-width: 768px) {
     .promo-container {
         flex-direction: row;
+      max-height:300px;
     }
 
     .promo-detail {
@@ -415,6 +416,7 @@ footer{
     text-align: center;
     background-color:  rgba(0,0,0,0.15);
 }
+
 
 
 
