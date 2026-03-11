@@ -144,7 +144,7 @@ nav {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/Recursos/upscalemedia-transformed.jpeg);
+  background-image: url(/Recursos/head.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -273,6 +273,7 @@ button:hover{
   display: block;
   
 }
+
 /*..............DIV ENCUENTRANOS..................... */
 .div_Recursos-Encuentranos{
   background-color: rgba(0,0,0,0.8);
@@ -644,4 +645,3 @@ nav.open .nav_redes {
 
 
 }
-
