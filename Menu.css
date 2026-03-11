@@ -344,12 +344,11 @@ nav.open .nav_redes {
 /* CONTENEDOR GENERAL DEL SLIDE */
 .promo-container {
     display: flex;
-    flex-direction:row;
     align-items: stretch;
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 15px 10px rgb(255, 255, 255,0.20);
-    margin: 40px auto;
+    margin: 40px 20px;
     max-width: 900px;
     background-color: whitesmoke;
     
@@ -384,7 +383,7 @@ nav.open .nav_redes {
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .promo-container {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .promo-detail {
@@ -416,6 +415,7 @@ footer{
     text-align: center;
     background-color:  rgba(0,0,0,0.15);
 }
+
 
 
 
