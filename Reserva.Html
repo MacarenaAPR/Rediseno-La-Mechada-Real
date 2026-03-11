@@ -14,11 +14,104 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-</head>
 
+</head>
 <body>
+   <div class="container-flex" id="head" >
+         <nav>
+            <button id="mobile-menu-btn">☰</button>
+            <a href="index.html"><img src="/Recursos/LOGO.png" alt="logo" id="LOGO"></a>
+            <div class="menu-dropdown">
+                <a id="Menu"href="menu.html">Menú</a>
+                <a id="contactanos"href="#div_Recursos-Encuentranos">Contactanos</a> 
+            </div>
+            
+            <div class="nav_redes">
+                <P>Siguenos en nuestras redes</P>
+                <a href="https://www.facebook.com/lamechadareal?locale=es_LA"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/lamechadareal"><i class="bi bi-instagram"></i></a>
+            </div>       
+        </nav>
+        <div id="titulo">
+            <h1>La Mechada Real</h1>
+            <h3>Sandwicheria</h3> 
+        </div>   
+    </div>
+
+  <main>
     
+    <section class="wrap">
+      <h1 class="title">Reserva aquí</h1>
+     
+      <form class="card" action="https://formspree.io/f/TU_ID" method="POST"> <!-- Reemplaza TU_ID por el tuyo -->
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" placeholder="Nombre Completo" required />
+
+        <label for="fecha">Fecha</label>
+        <input id="fecha" type="date" name="fecha" required />
+
+        <div class="row">
+          <div>
+            <label for="hora">Hora</label>
+            <input id="hora" type="time" name="hora" required />
+          </div>
+          <div>
+            <label for="personas">Personas</label>
+            <input id="personas" type="number" name="personas" min="1" value="2" required />
+          </div>
+        </div>
+
+        <label>Teléfono</label>
+        <div class="phone">
+          <select name="cod_pais" aria-label="Código país">
+            <option value="+56">+56</option>
+            <option value="+54">+54</option>
+            <option value="+57">+57</option>
+            <option value="+51">+51</option>
+          </select>
+          <input name="telefono" placeholder="Value" required />
+        </div>
+
+        <label for="mensaje">Comentario (opcional)</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Ej: mesa cerca de la ventana"></textarea>
+
+        <div class="actions">
+          <button type="reset" class="btn">Cancelar</button>
+          <button type="submit" class="btn">Reservar</button>
+        </div>
+
+        <div class="hint">Al reservar, te contactaremos para confirmar.</div>
+      </form>
+    </section>
+    <section class="img"></section>
+    
+  </main>
+  <a href="https://wa.me/56988424939" class="wsp-float" target="_blank" aria-label="WhatsApp">
+        <i class="bi bi-whatsapp" id="wsp"></i>
+        </a>
+  <script>
+        const btn = document.getElementById("mobile-menu-btn");
+        const nav = document.querySelector("nav");
+
+        btn.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+    </script>
+    <script>
+        window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+
+        if (window.innerWidth > 768) { // SOLO desktop
+            if (window.scrollY > 20) {
+            nav.classList.add("nav-lateral");
+            nav.style.opacity = "1";
+            nav.style.pointerEvents = "auto";
+            } else {
+            nav.classList.remove("nav-lateral");
+            }
+        }
+        });
+    </script> 
 </body>
 <footer>
     <p>Desarrollado por @ MPR.ING</p>
