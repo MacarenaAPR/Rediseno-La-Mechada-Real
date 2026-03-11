@@ -336,7 +336,7 @@ nav.open .nav_redes {
 /* Responsive */
 @media (max-width: 768px) {
     .categoria-flex {
-        flex-direction: column;
+        flex-direction: column !important;
     }
   
 }
@@ -415,6 +415,7 @@ footer{
     text-align: center;
     background-color:  rgba(0,0,0,0.15);
 }
+
 
 
 
