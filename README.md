@@ -33,15 +33,15 @@ https://demo-restaurante-rediseno.vercel.app
 
 ### 🏠 Página principal
 
-![Home](img/screenshot-home.png)
+![Home](img/home.png)
 
 ### 📋 Menú digital
 
-![Menu](img/screenshot-menu.png)
+![Menu](img/menu.png)
 
 ### 📱 Vista móvil
 
-![Mobile](img/screenshot-mobile.png)
+![Mobile](img/movil.jpeg)
 
 ---
 
