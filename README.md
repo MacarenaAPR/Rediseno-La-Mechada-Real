@@ -24,7 +24,7 @@ Además, este desarrollo forma la base para un sistema mayor que permitirá a re
 🔗 **Sitio en línea**
 
 ```
-https://tu-dominio.vercel.app
+https://demo-restaurante-rediseno.vercel.app
 ```
 
 ---
